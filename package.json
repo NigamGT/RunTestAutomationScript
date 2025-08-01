@@ -1,0 +1,66 @@
+{
+  "name": "cypress-automation-framework",
+  "version": "1.0.0",
+  "description": "Cypress Cucumber Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parallel": "node cypress\\run-parallel.cjs",
+    "full-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/*.feature'",
+    "full-regression-headless-chrome": "cypress run --browser chrome --spec 'cypress/e2e/*.feature'",
+    "AddDoppelmodel-tests-headed-chrome": "cypress run --headed --spec 'cypress/e2e/AddDoppelModel.feature'",
+    "connections-tests-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/Connections.feature'",
+    "datapoints-tests-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/DataPoint.feature'",
+    "testdata-tests-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/TestData1.feature'",
+    "testsuite-tests-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/TestSuite1.feature'",
+    "test-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/.feature'",
+    "payload-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/DataPoint.feature'",
+    "attributes-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/Attributes.feature'",
+    "Command-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/Command.feature'",
+    "Common-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/Common.feature'",
+    "ApplicationResponse-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/ApplicationResponse.feature'",
+    "Doppels-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/Doppels.feature'",
+    "DownloadLogs-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/DownloadLogs.feature'",
+    "MyAccount-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/MyAccount.feature'",
+    "TopicQueue-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/TopicQueue.feature'"
+  },
+  "author": "Nigam",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@types/fs-extra": "^11.0.4",
+    "clipboardy": "^4.0.0",
+    "concurrently": "^9.2.0",
+    "cypress": "^13.8.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-downloadfile": "^1.2.4",
+    "cypress-fs": "^0.2.5",
+    "cypress-real-events": "^1.13.0",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "xlsx": "^0.18.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/*.js",
+    "html": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-html/cucumber-report.html"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-ndjson/cucumber-report.ndjson"
+    },
+    "json": {
+      "enabled": true,
+      "formatter": "cucumber-json-formatter",
+      "output": "cypress/reports/cucumber-json/cucumber-report.json"
+    }
+  },
+  "dependencies": {
+    "convert-excel-to-json": "^1.7.0"
+  }
+}

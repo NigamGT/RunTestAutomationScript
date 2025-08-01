@@ -1,0 +1,35 @@
+{
+  "AddDoppelTest": [
+    {
+      "DoppelModelname": "AutomationDoppelModel",
+      "DoppelCategory": "general",
+      "DoppelName": "AutomationDoppel",
+      "CopyDoppelname": "CopyAutomationDoppel",
+      "Description": "Automation Testing",
+      "TestEnviornmentname": "default",
+      "DeviceIDname": "Test123",
+      "AccessTokenname": "abc_123_xyz",
+      "dev": "https://trial.doppelio.com/login",
+      "dev2": "https://trial.doppelio.com/login",
+      "prod": "https://trial.doppelio.com/login"
+    }
+  ],
+  "AddCSVDoppel": [
+    {
+      "CSVName": "cypress\\support\\20Devices 1.csv",
+      "DoppelName": "20Devices"
+    },
+    {
+      "CSVName": "cypress\\support\\25Device 1.csv",
+      "DoppelName": "25Devices"
+    },
+    {
+      "CSVName": "cypress\\support\\25k_Device.csv",
+      "DoppelName": "25kDevices"
+    },
+    {
+      "CSVName": "cypress\\support\\500_Devices.csv",
+      "DoppelName": "500Devices"
+    }
+  ]
+}

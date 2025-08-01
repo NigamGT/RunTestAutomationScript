@@ -1,0 +1,11 @@
+{
+    "url":"https://ec2-50-18-64-102.us-west-1.compute.amazonaws.com/login",
+    "Non_System_User":{
+        "username":"Nigam_Automation",
+        "password":"Nigam@2024"
+    },
+    "System_User":{
+        "username":"NIGAM-PROD-CLONE",
+        "password":"Nigam@2024"
+    }
+}

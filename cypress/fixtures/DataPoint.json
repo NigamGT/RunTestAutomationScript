@@ -1,0 +1,78 @@
+{
+    "AddDataPointsTest":[
+ {
+  "DoppelModel Name": "AutomationDoppelModel",
+  "DoppelModel Category": "General",
+  "DataPointName": "IntDataPoint01",
+  "DataType": "Int",
+  "Value": -2147483647,
+  "Data Source": "none",
+  "Description": "This is Int Data Point",
+  "DataPoint Name Fail": "DataPointNotExist"
+ },
+ {
+  "DataPointName": "IntDataPoint02",
+  "DataType": "Int",
+  "Value": 2147483647,
+  "Data Source": "none",
+  "Description": "This is Int Data Point"
+ },
+ {
+  "DataPointName": "DoubleDataPoint01",
+  "DataType": "Double",
+  "Value": "-99999999999999",
+  "Data Source": "none",
+  "Description": "This is Double Data Point"
+ },
+ {
+  "DataPointName": "DoubleDataPoint02",
+  "DataType": "Double",
+  "Value": "99999999999999",
+  "Data Source": "none",
+  "Description": "This is Double Data Point"
+ },
+ {
+  "DataPointName": "StringDataPoint01",
+  "DataType": "String",
+  "Value": "New",
+  "Data Source": "none",
+  "Description": "This is String Data Point"
+ },
+ {
+  "DataPointName": "StringDataPoint02",
+  "DataType": "String",
+  "Value": "Test",
+  "Data Source": "none",
+  "Description": "This is String Data Point"
+ },
+ {
+  "DataPointName": "BooleanDataPoint01",
+  "DataType": "Bool",
+  "Value": "true",
+  "Data Source": "none",
+  "Description": "This is Boolean Data Point"
+ },
+ {
+  "DataPointName": "BooleanDataPoint02",
+  "DataType": "Bool",
+  "Value": "false",
+  "Data Source": "none",
+  "Description": "This is Boolean Data Point"
+ },
+ {
+  "DataPointName": "GeoDataPoint01",
+  "DataType": "Geo",
+  "Value": "14.230306 , 77.595499",
+  "Data Source": "none",
+  "Description": "This is Geo Data Point"
+ },
+ {
+  "DataPointName": "GeoDataPoint02",
+  "DataType": "Geo",
+  "Value": "23.235646 , 98.576549",
+  "Data Source": "none",
+  "Description": "This is Geo Data Point"
+ }
+]
+   }
+ 
