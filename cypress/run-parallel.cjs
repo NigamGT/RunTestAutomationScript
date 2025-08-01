@@ -5,28 +5,28 @@ const { spawn } = require('child_process');
 const jsonPath = path.resolve(__dirname, 'fixtures', 'clipboard-output.json');
 
 (async () => {
-  await fs.writeJson(jsonPath, [], { spaces: 2 });
-  console.log('📄 clipboard-output.json cleared.');
+  // await fs.writeJson(jsonPath, [], { spaces: 2 });
+  // console.log('📄 clipboard-output.json cleared.');
 
-  await require('cypress').run({
-    spec: 'cypress/e2e/PreRequisite.feature',
-    headed: true,
-    browser: 'chrome'
-  });
+  // await require('cypress').run({
+  //   spec: 'cypress/e2e/PreRequisite.feature',
+  //   headed: true,
+  //   browser: 'chrome'
+  // });
 
-  console.log('✅ Waiting for valid JSON...');
+  // console.log('✅ Waiting for valid JSON...');
 
-  let users;
-  // Retry until JSON is fully written and parsable
-  while (true) {
-    try {
-      users = await fs.readJson(jsonPath);
-      if (Array.isArray(users)) break;
-    } catch {
-      await new Promise(r => setTimeout(r, 250));
-    }
-  }
-  console.log('✅ JSON validation complete. Users:', users.length);
+  // let users;
+  // // Retry until JSON is fully written and parsable
+  // while (true) {
+  //   try {
+  //     users = await fs.readJson(jsonPath);
+  //     if (Array.isArray(users)) break;
+  //   } catch {
+  //     await new Promise(r => setTimeout(r, 250));
+  //   }
+  // }
+  // console.log('✅ JSON validation complete. Users:', users.length);
 
   users = await fs.readJson(jsonPath);
   if (!Array.isArray(users) || users.length === 0) {

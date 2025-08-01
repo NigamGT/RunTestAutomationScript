@@ -972,7 +972,7 @@ Cypress.Commands.add(
       '#modal-root > div div > form > div:nth-child(1) > ' +
         'div:nth-child(2) > div > div:nth-child(1) > ' +
         'div.col-sm-6 > div > div > div:nth-child(1) > input'
-    ).type(payloadFormat, { force: true });
+    ).clear({force:true}).type(payloadFormat, { delay: 100 , force: true});
     cy.get('#modal-root > div div > form > div:nth-child(1) > ' +
         'div:nth-child(2) > div > div:nth-child(1) > ' +
         'div.col-sm-6 > div > div > div:nth-child(1) > input',{timeout:10000}).clear({force:true}).type(payloadFormat, { delay: 100 , force: true});
@@ -980,16 +980,16 @@ Cypress.Commands.add(
     cy.selectFirstOptionFromDropDown();
 
     // Add Connection
-    cy.get(
-      '#modal-root > div div > div > form > div:nth-child(1) > ' +
-        'div:nth-child(2) > div > div:nth-child(1) > div.col-md-6 > ' +
-        'div  div:nth-child(1) > input'
-    ).type(connection, { force: true });
-    cy.get('#modal-root > div div > div > form > div:nth-child(1) > ' +
-        'div:nth-child(2) > div > div:nth-child(1) > div.col-md-6 > ' +
-        'div  div:nth-child(1) > input',{timeout:10000}).clear({force:true}).type(connection, { delay: 100 , force: true});
-    cy.wait(5000);
-    cy.selectFirstOptionFromDropDown();
+    // cy.get(
+    //   '#modal-root > div div > div > form > div:nth-child(1) > ' +
+    //     'div:nth-child(2) > div > div:nth-child(1) > div.col-md-6 > ' +
+    //     'div  div:nth-child(1) > input'
+    // ).type(connection, { force: true });
+    // cy.get('#modal-root > div div > div > form > div:nth-child(1) > ' +
+    //     'div:nth-child(2) > div > div:nth-child(1) > div.col-md-6 > ' +
+    //     'div  div:nth-child(1) > input',{timeout:10000}).clear({force:true}).type(connection, { delay: 100 , force: true});
+    // cy.wait(5000);
+    // cy.selectFirstOptionFromDropDown();
 
     // Add Publish Interval
     cy.get('input[value="5"]')
